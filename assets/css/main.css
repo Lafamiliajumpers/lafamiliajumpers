@@ -2567,3 +2567,64 @@ blockquote {
 				}
 
 	}
+
+/* General styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Two-column layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px; /* Negative margin to counteract the padding of columns */
+}
+
+.col-half {
+    flex: 1;
+    padding: 15px; /* Padding to create spacing between columns */
+    min-width: 300px; /* Minimum width to ensure content doesn't get too squished on smaller screens */
+}
+
+/* Image styles */
+.image.featured img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for the image */
+}
+
+/* Social media links */
+.social-media-links {
+    margin-top: 30px;
+}
+
+.social-media-links p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-media-links ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-media-links li a {
+    color: #007BFF; /* Change to desired link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media-links li a:hover {
+    color: #0056b3; /* Change to desired hover color */
+}
